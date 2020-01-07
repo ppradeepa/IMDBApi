@@ -74,14 +74,16 @@ async function movieSearch(rating,genre_id) {
               
           });
           }
-           movieResultsArr.map(function(data){
-             return data.results.map((result)=>{
-              if(result.vote_average >= rating){
-                 return result
-                }
-              });
+
+          
+        //    movieResultsArr.map(function(data){
+        //      return data.map((result)=>{
+        //       if(result.vote_average >= rating){
+        //          return result
+        //         }
+        //       });
              
-          });
+        //   });
             movieResults.push(movieResultsArr);
           }
         
@@ -95,7 +97,7 @@ async function movieSearch(rating,genre_id) {
       }
     });
   }
-  
+
 /* Yet To Complete */
 // router.post("/movieListImages/v1", async (req, res) => {
 //     try {
